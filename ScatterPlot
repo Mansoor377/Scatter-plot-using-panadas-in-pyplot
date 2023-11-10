@@ -1,0 +1,13 @@
+# Example to draw a scatter plot in pandas  
+# use two columns to create a scatter plot in pandas DataFrame  
+import pandas as pd  
+import matplotlib.pyplot as plot  
+# List of values  
+data_value ={'Countries':['Europe', 'Austrailia', 'Germeny',  
+              'Canada', 'Pakistan', 'Dubai'],  
+      'GDP':[30, 40, 25, 40, 25, 48]}  
+# Load input data in the pandas DataFrame         
+dataFrame = pd.DataFrame(data = data_value);  
+# Draw a scatter plot using pandas  
+dataFrame.plot.scatter(x = 'Countries', y = 'GDP', title = "Scatter plot pandas variable for X and Y axis");  
+plot.show();
